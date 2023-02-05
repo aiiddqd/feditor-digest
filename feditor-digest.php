@@ -26,11 +26,12 @@ namespace Feditor\Digest{
 
         ob_start();
         ?>
-        <div><a href="<?= $url ?>", target="_blank">More...</a></div>
+        <div><a href="<?= $url ?>", target="_blank"  noreferrer noopener>More...</a></div>
         <?php 
         // $content .= sprintf('', $url);
         return $content . ob_get_clean();
     }
+    
     function view($post_id, $args)
     {
         if (empty($post_id)) {
