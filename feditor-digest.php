@@ -8,7 +8,7 @@
 
 namespace Feditor\Digest{
     
-    add_action('feditor_fields', __NAMESPACE__ . '\\view', 55, 2);
+    add_action('feditor_fields', __NAMESPACE__ . '\\view', 5, 2);
     add_action('feditor_post_save_data_after', __NAMESPACE__ . '\\save', 11, 2);
     add_filter('the_content', __NAMESPACE__ . '\\view_front', 11);
 
